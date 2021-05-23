@@ -42,8 +42,8 @@ function removeTask(e) {
     if (e.target.hasAttribute('href')) {
         if (confirm("Are you sure to delete?")) {
             let ele = e.target.parentElement;
-            console.log(ele);
-            //ele.remove();
+            //console.log(ele);
+            ele.remove();
 
             removeFromLocalStore(ele);
         }
